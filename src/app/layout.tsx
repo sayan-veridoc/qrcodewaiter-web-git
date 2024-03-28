@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import "./globals.scss";
-import { Providers } from "@/utils/providers";
 
 export const metadata: Metadata = {
   title: {
@@ -17,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Providers>{children}</Providers>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -2,40 +2,40 @@
 
 import Link from "next/link";
 import styles from "./loginform.module.scss";
-import { Input } from "antd";
-import { MailOutlined, LockOutlined } from "@ant-design/icons";
+import { LockOutlined, MailOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { PasswordField } from "@/components/ui/passwordfield";
 
 export default function LoginForm() {
-  const [passwordVisible, setPasswordVisible] = useState(false);
   return (
     <>
       <form action="" className="w-full gap-6 mb-2">
         <Input
-          size="large"
-          placeholder="Email"
-          type="email"
-          className="mb-4"
-          prefix={
+          icon={
             <MailOutlined
-              style={{ color: "rgba(0,0,0,.45)", marginRight: 5 }}
+              style={{
+                color: "rgba(0,0,0,.45)",
+                marginRight: 5,
+              }}
+              className="absolute top-3 left-3 z-10"
             />
           }
+          type="email"
+          placeholder="Email"
+          className="mb-3"
         />
-        <Input.Password
-          size="large"
-          placeholder="Password"
-          visibilityToggle={{
-            visible: passwordVisible,
-            onVisibleChange: setPasswordVisible,
-          }}
-          prefix={
+        <PasswordField
+          icon={
             <LockOutlined
               style={{ color: "rgba(0,0,0,.45)", marginRight: 5 }}
+              className="absolute top-3 left-3 z-10"
             />
           }
+          placeholder="Password"
         />
+
         <div className={styles.check_box_div}>
           <Link className={styles.forgot_pass} href={"/forgotpassword"}>
             Forgot Password?
