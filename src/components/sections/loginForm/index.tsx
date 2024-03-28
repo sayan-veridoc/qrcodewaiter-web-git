@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import styles from "./loginform.module.scss";
-import { Button, Input } from "antd";
+import { Input } from "antd";
 import { MailOutlined, LockOutlined } from "@ant-design/icons";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function LoginForm() {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -40,7 +41,8 @@ export default function LoginForm() {
             Forgot Password?
           </Link>
         </div>
-        <Button type="primary" block size="large" loading>
+
+        <Button type="button" className="w-full" size={"lg"}>
           Login
         </Button>
       </form>
