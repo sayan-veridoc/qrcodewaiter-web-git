@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.scss";
-import { Providers } from "./utils/providers";
+import { Providers } from "@/utils/providers";
 
 export const metadata: Metadata = {
   title: {

@@ -3,9 +3,9 @@ import styles from "./loginPage.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
-import Header from "@/app/components/sections/core/header/header";
-import LoginForm from "@/app/components/sections/loginForm";
-import LoginFooter from "@/app/components/sections/core/loginFooter/footer";
+import Header from "@/components/sections/core/header/header";
+import LoginForm from "@/components/sections/loginForm";
+import LoginFooter from "@/components/sections/core/loginFooter/footer";
 
 export const metadata: Metadata = {
   title: "Login",

@@ -3,10 +3,7 @@ import styles from "./loginFooter.module.scss";
 import Image from "next/image";
 import { FaEnvelope, FaFacebookF, FaLocationDot } from "react-icons/fa6";
 import Link from "next/link";
-import {
-  FooterLinks,
-  footerLinks,
-} from "@/app/utils/constant/footerSocialIcon";
+import { footerLinks, FooterLinks } from "@/utils/constant/footerSocialIcon";
 
 export default function LoginFooter() {
   function currentYear(): number {
