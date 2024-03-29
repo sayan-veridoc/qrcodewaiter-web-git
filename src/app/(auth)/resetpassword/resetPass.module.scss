@@ -1,0 +1,44 @@
+@layer {
+  .custom-shadow {
+    @apply shadow-[rgba(0,0,0,0.16)_0px_10px_36px_0px,rgba(0,0,0,0.06)_0px_0px_0px_1px];
+  }
+}
+
+.loginSection {
+  @apply relative min-h-[calc(100vh_-_603px)] flex items-center px-0 py-[50px];
+  background: #fff;
+
+  .image {
+    @apply w-full flex justify-end items-end my-auto tab:hidden;
+  }
+
+  .loginDiv {
+    @apply rounded min-h-[460px] m-auto px-[50px] py-10 max-w-[620px];
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    .loginForm {
+      @apply inline-flex flex-col w-full mb-[17px];
+
+      .loginTitle h1 {
+        @apply text-2xl text-left text-black font-bold mb-10;
+      }
+    }
+  }
+}
+
+.loginDiv {
+  @apply flex h-auto w-full justify-center items-center bg-white;
+}
+
+.top_field_sec {
+  @apply flex items-center justify-between mb-5;
+
+  a {
+    @apply text-black font-bold text-base cursor-auto;
+  }
+
+  a:last-of-type {
+    @apply font-normal underline cursor-pointer text-[15px];
+  }
+}

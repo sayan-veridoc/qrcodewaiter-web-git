@@ -1,0 +1,6 @@
+.check_box_div {
+  @apply flex justify-end mt-5 mb-2.5 mx-0;
+}
+.forgot_pass {
+  @apply underline text-black text-[15px] hover:text-[#e01d35];
+}

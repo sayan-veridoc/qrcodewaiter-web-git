@@ -29,14 +29,14 @@ const PasswordField = React.forwardRef<HTMLInputElement, InputProps>(
           {...props}
         />
         <button
-          className="focus:outline-none"
+          className="focus:outline-none absolute right-3  top-1/2 -translate-y-1/2"
           type="button"
           onClick={toggleVisibility}
         >
           {passwordVisible ? (
-            <EyeInvisibleOutlined className="text-[#b3b3b3] text-lg absolute right-3 bottom-9" />
+            <EyeInvisibleOutlined className="text-[#b3b3b3] text-lg " />
           ) : (
-            <EyeOutlined className="text-[#b3b3b3] text-lg absolute right-3 bottom-9" />
+            <EyeOutlined className="text-[#b3b3b3] text-lg" />
           )}
         </button>
       </div>
