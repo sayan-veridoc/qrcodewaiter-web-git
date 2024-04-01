@@ -14,6 +14,7 @@ const config = {
       screens: {
         DEFAULT: "100%",
         sm: "960px ",
+        tab: "991px ",
         lg: "1140px ",
         xl: "1320px ",
         "2xl": "1600px",
@@ -21,13 +22,19 @@ const config = {
       padding: {
         DEFAULT: "10px",
         sm: "10px",
+        tab: "10px ",
         lg: "10px",
         xl: "10px",
         "2xl": "10px",
       },
     },
     extend: {
+      transitionDuration: {
+        "6000": "6000ms",
+      },
       colors: {
+        "dark-purple": "#081A51",
+        "light-white": "rgba(255,255,255,0.17)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

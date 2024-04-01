@@ -13,16 +13,16 @@ export default function LoginFooter() {
     <footer>
       <div className={styles.footer}>
         <div className="container mx-auto">
-          <div className="grid grid-cols-4 ">
-            <div>
+          <div className="grid grid-cols-4 tab:grid-cols-2 mob:grid-cols-1 gap-5">
+            <div className="tab:order-[-1]">
               <div className="mb-7">
                 <a href="https://qrcodewaiter.com/">
                   <Image
                     src="/img/footerlogo.png"
                     alt="img"
                     className="max-w-full h-auto"
-                    width={687}
-                    height={200}
+                    width={250}
+                    height={72}
                   />
                 </a>
               </div>
@@ -48,21 +48,21 @@ export default function LoginFooter() {
                 <h3>Useful Links</h3>
                 <ul>
                   <li className="nav-item">
-                    <a href="https://veridoclogbook.com/feature-and-benefits">
+                    <a href="https://qrcodewaiter.com/feature-and-benefits">
                       Features and Benefits
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="https://veridoclogbook.com/faq">FAQs</a>
+                    <a href="https://qrcodewaiter.com/faq">FAQs</a>
                   </li>
                   <li className="nav-item">
-                    <a href="https://veridoclogbook.com/blog">Blogs</a>
+                    <a href="https://qrcodewaiter.com/blog">Blogs</a>
                   </li>
                   <li className="nav-item">
-                    <a href="https://veridoclogbook.com/contact">Contact Us</a>
+                    <a href="https://qrcodewaiter.com/contact">Contact Us</a>
                   </li>
                   <li className="nav-item">
-                    <a href="https://veridoclogbook.com/privacy-policy">
+                    <a href="https://qrcodewaiter.com/privacy-policy">
                       Privacy Policy
                     </a>
                   </li>
@@ -70,7 +70,7 @@ export default function LoginFooter() {
               </div>
             </div>
             <div>
-              <div className={`footer_heading ${styles.footerContact}`}>
+              <div className={`footer_heading ${styles.footerContact} `}>
                 <h3>Contact Us</h3>
                 <ul>
                   <li>
@@ -101,8 +101,7 @@ export default function LoginFooter() {
                 </ul>
               </div>
             </div>
-
-            <div className="ml-auto">
+            <div className="lg:ml-auto md:order-[-1] lg:order-1 md:m-auto">
               <a href="https://veridocglobal.com/" target="_blank">
                 <Image
                   src="/img/AVeriDocGlobalProduct_Logo_White_250px.webp"

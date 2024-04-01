@@ -13,24 +13,24 @@
   @apply bg-black px-0 py-2.5;
 }
 .usefull_link {
-  @apply max-w-[240px] ml-auto;
+  @apply max-w-[240px] lg:ml-auto;
   h3 {
     @apply text-white text-2xl font-semibold mb-5;
   }
   li:not(:last-of-type) {
-    @apply mb-[15px];
+    @apply mb-3;
   }
   a {
-    @apply text-white text-xl font-medium no-underline;
+    @apply text-white text-base font-medium no-underline;
   }
 }
 .footerContact {
-  @apply max-w-[375px] m-auto;
+  @apply max-w-[375px];
   h3 {
     @apply text-white text-2xl font-semibold mb-5;
   }
   li:not(:last-of-type) {
-    @apply mb-[15px];
+    @apply mb-[10px];
   }
 
   span {
