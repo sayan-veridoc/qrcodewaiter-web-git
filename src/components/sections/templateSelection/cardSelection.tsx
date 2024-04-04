@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import styles from "./index.module.scss";
 import Image from "next/image";
-import { cards } from "@/card";
+import { cards } from "@/utils/card";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 

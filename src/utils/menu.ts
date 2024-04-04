@@ -16,13 +16,13 @@ export type MENUTYPE = {
   href: string;
   label?: string;
 };
-export const menu1: MENUTYPE[] = [
+export const menu1: SideNavItem[] = [
   {
+    id: 1,
     title: "Select Template",
     href: "/selectwebsitetemplate",
     icon: LayoutTemplate,
     variant: "default",
-    label: "Templates",
   },
 ];
 export const menu2: MENUTYPE[] = [
