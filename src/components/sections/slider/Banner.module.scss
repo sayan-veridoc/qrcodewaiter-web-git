@@ -1,0 +1,6 @@
+.maincontainer {
+  @apply mt-5;
+  .formcontainer {
+    @apply bg-white p-4 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_2px_6px_2px];
+  }
+}

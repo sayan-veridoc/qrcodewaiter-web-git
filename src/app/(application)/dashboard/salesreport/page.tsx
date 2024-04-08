@@ -7,7 +7,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Sales",
+};
 type Props = {};
 
 export default function SalesReport({}: Props) {

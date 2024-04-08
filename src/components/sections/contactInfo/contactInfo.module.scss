@@ -1,0 +1,25 @@
+.maincontainer {
+  @apply mt-5;
+
+  .formcontainer {
+    @apply bg-white p-4 mr-1 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_2px_6px_2px];
+    h4 {
+      @apply font-bold pb-4;
+    }
+    > div:nth-last-child(3) {
+      @apply flex;
+      label {
+        @apply border-[1px] border-black w-[31vw] h-10 flex pl-3 items-center border-input;
+      }
+    }
+    > div:nth-last-child(2) {
+      @apply min-h-[30vh] border-[1px] mt-2;
+    }
+    > div:nth-last-child(1) {
+      @apply flex flex-row justify-end;
+      Button {
+        @apply my-2;
+      }
+    }
+  }
+}

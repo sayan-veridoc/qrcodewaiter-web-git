@@ -16,7 +16,7 @@ const SideNavBar: React.FC<SideNavBarProps> = ({ menu }) => {
     <div
       className={` ${
         open ? "w-72" : "w-20 "
-      } bg-[#1c2434] h-screen p-5 relative duration-300 z-[999]`}
+      } bg-[#1c2434] p-5 relative duration-300 z-[999]`}
     >
       <Button
         type="button"
@@ -29,7 +29,7 @@ const SideNavBar: React.FC<SideNavBarProps> = ({ menu }) => {
         <FaArrowLeft className="text-primary text-base" />
       </Button>
 
-      <div className="flex gap-x-4 items-center">
+      <div className="flex gap-x-4 items-center justify-center">
         <Image
           src={"/img/logos.svg"}
           alt="logo"
@@ -37,13 +37,13 @@ const SideNavBar: React.FC<SideNavBarProps> = ({ menu }) => {
           height={40}
           width={40}
         />
-        <h1
+        {/* <h1
           className={`text-white origin-left font-medium text-xl duration-200 ${
             !open && "scale-0"
           }`}
         >
           WAITER
-        </h1>
+        </h1> */}
       </div>
       <ul className="pt-2">
         <Nav isCollapsed={!open} links={menu} />

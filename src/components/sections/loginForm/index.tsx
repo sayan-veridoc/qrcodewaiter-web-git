@@ -106,7 +106,7 @@ export default function LoginForm() {
 
           <div className={styles.check_box_div}>
             <Link className={styles.forgot_pass} href={"/forgotpassword"}>
-              Forgot Password?
+              Lost your password?
             </Link>
           </div>
 

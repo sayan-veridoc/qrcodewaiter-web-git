@@ -7,6 +7,9 @@ import {
   Settings2,
   LayoutTemplate,
   AlignJustify,
+  PackagePlus,
+  ListCollapse,
+  Container,
 } from "lucide-react";
 
 export type MENUTYPE = {
@@ -108,26 +111,26 @@ export const sideNavItems: SideNavItem[] = [
       {
         id: 2.1,
         title: "Categories",
-        href: "/dashboard/category",
+        href: "/dashboard/products/category",
         variant: "default",
         label: "Categories",
-        icon: Settings2,
+        icon: PackagePlus,
       },
       {
         id: 2.2,
         title: "Items",
-        href: "/dashboard/items",
+        href: "/dashboard/products/items",
         variant: "default",
         label: "Items",
-        icon: Settings2,
+        icon: ListCollapse,
       },
       {
         id: 2.3,
-        title: "Stoks",
-        href: "/dashboard/stoks",
+        title: "Stocks",
+        href: "/dashboard/products/stocks",
         variant: "default",
         label: "Stocks",
-        icon: Settings2,
+        icon: Container,
       },
     ],
   },

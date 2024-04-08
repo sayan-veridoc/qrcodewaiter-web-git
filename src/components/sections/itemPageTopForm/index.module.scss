@@ -1,0 +1,9 @@
+.venueurlarea {
+  @apply w-full float-left flex flex-wrap;
+  .weburlTitle {
+    @apply mr-1 float-left my-7 font-bold;
+  }
+  .weburlInfo {
+    @apply w-full float-left max-w-[290px] min-w-[290px] flex items-center gap-4;
+  }
+}

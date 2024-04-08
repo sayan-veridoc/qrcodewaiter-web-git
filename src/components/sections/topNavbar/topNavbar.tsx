@@ -23,7 +23,7 @@ export default function TopNavbar({ menu }: Props) {
   const [open, setOpen] = useState(false);
   const pathName = usePathname();
   return (
-    <header className="flex items-center justify-between h-16 bg-white border-b border-gray-200 drop-shadow-sm pl-5 pr-12">
+    <header className="flex items-center justify-between py-3 bg-white border-b border-gray-200 drop-shadow-sm pl-5 pr-12">
       <div className="flex items-center px-6">
         {menu.map((item, index) => (
           <h1 className="font-bold text-2xl" key={index}>

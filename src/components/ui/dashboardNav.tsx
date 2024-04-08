@@ -109,7 +109,7 @@ export function Nav({ links, isCollapsed }: NavProps) {
                             "justify-start"
                           )}
                         >
-                          <link.icon className="mr-2 h-4 w-4" />
+                          <subItem.icon className="mr-2 h-4 w-4" />
                           {subItem.title}
                         </Link>
                       );
