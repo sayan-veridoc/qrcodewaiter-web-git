@@ -26,7 +26,11 @@ export default function CardSelection({}: Props) {
         },
       });
       setTimeout(() => {
-        router.push("/dashboard/manage");
+        if (window.location.href.includes("setup")) {
+          router.push("/setup/basic-details");
+        } else {
+          router.push("/dashboard/manage");
+        }
       }, 2000);
     }
   };
